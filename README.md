@@ -1,1 +1,22 @@
 # Diffusion-Model-101
+Diffusion Models Tutorial (Python)
+This repository shows you the implementation of representative diffusion model algorithms and its guidance techniques from scratch in Python (PyTorch), with theoretical aspects behind code.
+
+Table of Contents
+Variational Auto-Encoder (VAE)
+Denoising Diffusion Probabilistic Models (DDPM)
+Score Matching with Langevin Dynamics (SMLD)
+Score-based generative modeling with Stochastic Differential Equation (SDE)
+Conditional Diffusion Models
+Classifier Diffusion Guidance
+Classifier-free Diffusion Guidance
+In the former part in this repository (tutorial 1 - 4), I'll focus on diffusion model's algorithms.
+In the latter part (tutorial 5 - 7), we proceed to steer diffusion models with external knowledge (such as, a class or a generic text prompt) and learn the fundamental of diffusion guidance.
+
+Historically image generation (including text-to-image models) has been developed and improved by adopting GAN-based methods and autoregressive methods in 2014 - 2021.
+In recent works, diffusion models have achieved great success, outperforming these previous approaches in the quality of image generation. (GAN-based approach, however, still has its own beneficial aspects. See below note.)
+
+Note : The drawback of diffusion models (compared to GAN) is the computational efficiency. As you will see in the examples in this repository, diffusion models requires hundreds or thousands of iterations to generate an image - i.e., slow speed for image generation.
+There exist works and challenges to improve the sampling speed in diffusion models. (See note for DDIM in this notebook.)
+
+Tsuyoshi Matsuzaki @ Microsoft
